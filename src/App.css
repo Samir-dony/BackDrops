@@ -23,10 +23,13 @@
 .modal{
     display: flex;
     flex-direction: column;
+    height: 400px;  
     position: fixed;
     right: 10%;
     top: 20%;
+    overflow-y: scroll;
     background: white;
+    position: absolute;
 }
 
 .text{

@@ -4,7 +4,7 @@ import ocean from './assets/ocean.svg';
 import background from './assets/background.svg';
 import { useState } from 'react';
 import closeButton from './assets/closeButton.svg';
-import OIP from './assets/OIP.jpg';
+import aa from './assets/Brilliant-Colors-of-Nature-1080p-Background.jpg';
 
 function App() {
   const [img, setImg] = useState(false);
@@ -28,14 +28,14 @@ function App() {
         </div>
 
         {img ? <div className='modal'>
-          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 5}}>
+          <div style={{position: 'fixed', top: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 5}}>
             <h1>Backdrops</h1>
             <img style={{backgroundColor: 'black', cursor: 'pointer', width: 20}} src={closeButton} onClick={() => setImg(!img)} alt='Error'></img>
           </div>
           <div style={{display: 'flex', flexDirection: 'column', boxShadow: '0px 1px 4px 1px black'}}>
             <img src={background} style={{cursor: 'pointer', width: 400}} alt="Error!" onClick={() => setBack(background)}/>
             <img src={ocean} style={{cursor: 'pointer', width: 400}} alt="Error" onClick={() => setBack(ocean)} />
-            <img src={ocean} style={{cursor: 'pointer', width: 400}} alt="Error" onClick={() => setBack(OIP)} />
+            <img src={aa} style={{cursor: 'pointer', width: 400}} alt="Error" onClick={() => setBack(aa)} />
           </div>
         </div> : ''}
       </div>
