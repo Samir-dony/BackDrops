@@ -4,6 +4,7 @@ import ocean from './assets/ocean.svg';
 import background from './assets/background.svg';
 import { useState } from 'react';
 import closeButton from './assets/closeButton.svg';
+import OIP from './assets/OIP.jpg';
 
 function App() {
   const [img, setImg] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <div style={{display: 'flex', flexDirection: 'column', boxShadow: '0px 1px 4px 1px black'}}>
             <img src={background} style={{cursor: 'pointer', width: 400}} alt="Error!" onClick={() => setBack(background)}/>
             <img src={ocean} style={{cursor: 'pointer', width: 400}} alt="Error" onClick={() => setBack(ocean)} />
+            <img src={ocean} style={{cursor: 'pointer', width: 400}} alt="Error" onClick={() => setBack(OIP)} />
           </div>
         </div> : ''}
       </div>
