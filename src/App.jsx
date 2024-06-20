@@ -3,6 +3,7 @@ import bycicle from './assets/bycicle.svg';
 import ocean from './assets/ocean.svg';
 import background from './assets/background.svg';
 import { useState } from 'react';
+import closeButton from './assets/closeButton.svg';
 
 function App() {
   const [img, setImg] = useState(false);
@@ -28,8 +29,7 @@ function App() {
         {img ? <div className='modal'>
           <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 5}}>
             <h1>Backdrops</h1>
-            <p>Close</p>
-            {/* <img style={{backgroundColor: 'black', cursor: 'pointer', width: 20}} src={closeButton} onClick={() => setImg(!img)} alt='Error'></img> */}
+            <img style={{backgroundColor: 'black', cursor: 'pointer', width: 20}} src={closeButton} onClick={() => setImg(!img)} alt='Error'></img>
           </div>
           <div style={{display: 'flex', flexDirection: 'column', boxShadow: '0px 1px 4px 1px black'}}>
             <img src={background} style={{cursor: 'pointer', width: 400}} alt="Error!" onClick={() => setBack(background)}/>
